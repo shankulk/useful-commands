@@ -9,3 +9,6 @@
 
 - Telepresence Swap Deployment
 > ```telepresence --swap-deployment <deployment_name>:<container_name> --env-json telepresence.json```
+
+- Set Environment Variable
+> ```kubectl set env deployment/gamesys-zen-garden REPLAY_ENABLED='True'```
