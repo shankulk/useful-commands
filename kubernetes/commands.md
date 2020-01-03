@@ -6,3 +6,6 @@
 
 - List and delete pods with specific status (`Pending`, `Running`, `Unknown`, `Succeeded`, `Failed`)
 > ```kubectl -n default delete pods --field-selector=status.phase=Pending|Running|Failed|Succeeded|Unknown```
+
+- Telepresence Swap Deployment
+> ```telepresence --swap-deployment <deployment_name>:<container_name> --env-json telepresence.json```
